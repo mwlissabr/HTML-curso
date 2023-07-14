@@ -1,0 +1,2 @@
+Primeira aula de anatomia de tag, explicando sobre abertura e fechamento de tag, 
+comentários no HTML, corpo da tag.
