@@ -1,10 +1,10 @@
 <h1>Projeto</h1>
 <ul class="tree">
     <li>
-        Backend
+        <span >Backend</span>
         <ul>
             <li>
-                app
+                <span>App</span>
                 <ul>
                     <li>produto.js</li>
                     <li>usuario.js</li>
@@ -12,7 +12,7 @@
                 </ul>
             </li>
             <li>
-                config
+                <span >Config</span>
                 <ul>
                     <li>banco.js</li>
                     <li>rotas.js</li>
@@ -22,10 +22,10 @@
         </ul>
     </li>
     <li>
-        Frontend
+        <span>Frontend</span>
         <ul>
             <li>
-                public
+                <span >Public</span>
                 <ul>
                     <li>app.css</li>
                     <li>app.js</li>
@@ -38,5 +38,11 @@
 
 <link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css">
 <script>
-    console.log('arvore')
+    document.querySelectorAll('span').forEach(folder => {
+        folder.onclick = function(e) {
+            const ul = folder.nextElementSibling
+            const d = ul.style.display
+            ul.style.display = d === 'none' ? 'block' : 'none'
+        }
+    })
 </script>
